@@ -1,30 +1,61 @@
 ---
-description: 27/07/2020
+description: 16/7/2020
 ---
 
-# Game hacking - Cheat Engine Tutorial - Step 9 Write-up
+# Zookeeper - keep your zoo tidy - 16/07/2020
 
-## Instruction:
+Reference: [http://www.corejavaguru.com/bigdata/zookeeper/cli](http://www.corejavaguru.com/bigdata/zookeeper/cli)
 
-![](.gitbook/assets/cheatgame.png)
+Zookeeper Client provide Command Line Utilities for us to play. Let's run it in our virtual machine \(Hortonworks Sandbox\)
 
-## Attack button:
+Cli execution is located at /usr/hdp/current/zookeeper-client/bin
 
-![](.gitbook/assets/1-1-.png)
+```bash
+cd /usr/hdp/current/zookeeper-client/bin
+./zkCli.sh
+```
 
-eax is the key parameter passed to function 0x0040ECD0 controlling the decrement in Eric Health\(the decrement value is saved in EDX\), moving a smaller value into eax will significantly decrease the decrement in that player health \(noticing that there are 4 different function handling Eric, Dave, HAL, KIT\). Thus, using code injection in cheat engine modifying
+Once you're done, you will see the followings. You can now freely explore ZooKeeper utilities:
 
-"mov eax, 00000005" -&gt; "mov eax, 00000001" \(Eric and Dave\)
+list out all znodes
 
-"mov eax, 00000005" -&gt; "mov eax, 000000FF" \(HAL and KITT\)
+```bash
+/ls
+#[registry, cluster, controller, brokers, storm, zookeeper, infra-solr, hbase-unsecure, admin, isr_change_notification, log_dir_event_notification, templeton-hadoop, hiveserver2, controller_epo
+#ch, druid, consumers, latest_producer_id_block, config]
+```
 
-![](.gitbook/assets/code_injection.png)
+Create a new Znode
 
-![](.gitbook/assets/2-1-.png)
+```bash
+ create /zk_test test_data
+```
 
-## Restart game and autoplay:
+Get zk\_test Znode
 
-![](.gitbook/assets/code_injection_auto.png)
+```bash
+get /zk_test
+```
 
-![](.gitbook/assets/code_injection_auto_2.png)
+![](.gitbook/assets/zk_test.png)
+
+Set up a watcher to zk\_test
+
+```bash
+get /zk_test 1
+```
+
+edit the data associated with zk\_test
+
+```bash
+set /zk_test "127.0.0.1:2345"
+```
+
+![](.gitbook/assets/zoo-2.png)
+
+Finally, delete the node.
+
+```bash
+delete /zk_test
+```
 

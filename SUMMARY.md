@@ -53,4 +53,6 @@
 
 * [Hive - Relational database - Importing data + read all - 14/07/2020](untitled-17.md)
 * [HBase - Non-Relational DataBase - Importing data - 15/07/2020](untitled-18.md)
+* [Zookeeper - keep your zoo tidy - 16/07/2020](untitled-19.md)
+* [Oozie - automate/schedule the working flow of Hadoop \(de\) - 17/07/2020](untitled-20.md)
 

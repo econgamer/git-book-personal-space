@@ -1,32 +1,139 @@
 ---
-description: 28/07/2020
+description: 17/7/2020
 ---
 
-# Game hacking - Cheat Engine - CE Game tutorials - Step3 - Write-up - 28/07/2020
+# Oozie - automate/schedule the working flow of Hadoop \(de\) - 17/07/2020
 
-![](.gitbook/assets/game3.png)
+## Getting the files ready
 
-Check if any parameters that we can make us of. At the beginning, I can think of characters' movement is the easiest one to scan.
+### 1. create\_table.hql
 
-I have found players x coordinate and I keep track of what writing to its address whenever x movement of player is triggered.
+I am going to use the script from "Hive - Relational database - Importing data + read all " to create a new table via Hive.
 
-Going into the addresss, scanning through the code, ebp is something I would look into first as I am interested in learning about what parameters is passing through to the movement function.
+```text
+CREATE TABLE gamesale(
+  name STRING,
+  platform STRING,
+  year_of_Release STRING,
+  genre STRING,
+  publisher STRING,
+  nA_sales STRING,
+  eU_sales STRING,
+  jP_Sales STRING,
+  other_Sales STRING,
+  global_Sales STRING,
+  critic_Score STRING, 
+  critic_Count STRING,
+  user_Score STRING,
+  user_Count STRING,
+  developer STRING,
+  rating STRING)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '\t'
+STORED AS TEXTFILE;
 
-Also, noticing that there are always other parameter that will be found on ebp+x, thus, there are no reasons why don't give it a check.
 
-![](.gitbook/assets/step2-3.png)
 
-Going to ebp \(address\) in hexview
+LOAD DATA LOCAL INPATH '/tmp/Video_Games_Sales_as_at_22_Dec_2016_adjusted.tsv'
+OVERWRITE INTO TABLE gamesalesss;
+```
 
-![](.gitbook/assets/step3-1.png)
+### 2. workflow.xml
 
-Found it! Those are the parameters we are looking for and I have played around and discovering that when player jump, the following memory will change as well
+This is the instructions given to Oozie to execute the working process. The format is XML and the syntax is quite self-explanatory.
 
-![](.gitbook/assets/step3-2.png)
+```markup
+<?xml version="1.0" encoding="UTF-8"?>                                                                                                                
+<workflow-app xmlns="uri:oozie:workflow:0.2" name="game-sales">                                                                                       
+        <start to="hive-node"/>                                                                                                                       
+        <action name="hive-node">                                                                                                                     
+                <hive xmlns="uri:oozie:hive-action:0.2">                                                                                              
+                        <job-tracker>${jobTracker}</job-tracker>                                                                                      
+                        <name-node>${nameNode}</name-node>                                                                                            
+                        <job-xml>${appPath}/hive-site.xml</job-xml>                                                                                   
+                        <configuration>                                                                                                               
+                                <property>                                                                                                            
+                                        <name>oozie.hive.defaults</name>                                                                              
+                                        <value>${appPath}/hive-site.xml</value>                                                                       
+                                </property>                                                                                                           
+                                <property>                                                                                                            
+                                        <name>hadoop.proxyuser.oozie.hosts</name>                                                                     
+                                        <value>*</value>                                                                                              
+                                </property>                                                                                                           
+                                <property>                                                                                                            
+                                        <name>hadoop.proxyuser.oozie.hosts</name>                                                                     
+                                        <value>*</value>                                                                                              
+                                </property>                                                                                                           
+                                <property>                                                                                                            
+                                        <name>hadoop.proxyuser.oozie.groups</name>                                                                    
+                                        <value>*</value>                                                                                              
+                                </property>                                                                                                           
+                        </configuration>                                                                                                              
+                        <script>create_table.hql</script>                                                                                             
+                </hive>                                                                                                                               
+                <ok to="end"/>                                                                                                                        
+        </action>error to="fail"/>                                                                                                                    
 
-Setting a breakpoint to OnAir parameter, tracing the writing access, following the address. mov edx,\[0065C0F8\] is wired to me as gloabl variable is used and I guessed it would be an important parameter to jumping action. After testing around, \[0065C0F8\] turns out to be the variable controlling the jumping distance. Setting a higher value allows us to jump higher to get all collisions to turn into green color.
 
-![](.gitbook/assets/step3-3.png)
+        <kill name="fail">                                                                                                                            
+                <message>hive failed, please check your process once again</message>                                                                  
+        <end name="end"/>                                                                                                                             
 
-After unlocking the door, all the enemies will relocate to the door and block it from the player. Remember that we have find the address of player's x-coordinate at the beginning, it's time to change the value and relocate the player into the door position \(you can do it by trial-and -error\). We break the game. Well done!
+</workflow-app>
+```
+
+### 3. job.properties
+
+This is the file used as a configuration when firing up Oozie work task
+
+```markup
+nameNode=hdfs://sandbox-hdp.hortonworks.com:8020rties                                                                                                 
+
+jobTracker=sandbox-hdp.hortonworks.com:8050                                                                                                           
+oozie.libpath=${nameNode}/user/oozie/share/lib/hive                                                                                                   
+oozie.use.system.libpath=true                                                                                                                         
+appPath=${nameNode}/user/maria_dev/workflowsaria_dev/workflows
+```
+
+{% hint style="info" %}
+**hostname -f** can be used to find out vm hostname. Mine is _sandbox-hdp.hortonworks.com_
+{% endhint %}
+
+### 4. hive-site.xml
+
+This is the hive config file, which will be import to our executed folder to support for hive configuration that specified at workflow.xml
+
+```markup
+/var/lib/ambari-server/resources/stacks/HDP/2.1/services/HIVE/configuration/hive-site.xml
+```
+
+### Once the preparation is done, time to move to our execution process:
+
+Move your files into workflows directory:
+
+```markup
+mkdir workflows
+cd workflows
+```
+
+Transfer it to Hadoop file system:
+
+```markup
+hadoop fs -put workflow.xml /user/maria_dev/workflows/
+hadoop fs -put create_table.hql /user/maria_dev/workflows/
+hadoop fs -put /var/lib/ambari-server/resources/stacks/HDP/2.1/services/HIVE/configuration/hive-site.xml
+```
+
+Fire up Oozie:
+
+```markup
+su maria_dev
+oozie job -oozie http://lcaolhost:11000/oozie -config job.properties -run
+```
+
+{% hint style="success" %}
+Oozie supports UI panel.
+
+View the result from: _**127.0.0.1:11000/oozie/**_
+{% endhint %}
 
