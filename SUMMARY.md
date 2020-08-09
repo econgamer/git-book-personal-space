@@ -25,4 +25,5 @@
 * [ElasticSearch - Environment setup - 20/07/2020](untitled.md)
 * [ElasticSearch - Versioning - 22/07/2020](untitled-1.md)
 * [ElasticSearch  - Add mapping + POST & GET A Single Entry - 21/07/2020](untitled-2.md)
+* [ElasticSearch - Bulk API - 22/07/2020](untitled-3.md)
 
