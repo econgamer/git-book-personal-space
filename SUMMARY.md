@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [My Blog](README.md)
 
 ## Reverse-engineering
 
@@ -8,6 +8,11 @@
 * [Game hacking - Cheat Engine - CE Game tutorials -Step2 - Feedback - 28/07/2020](reverse-engineering/untitled-18.md)
 * [Game hacking - Cheat Engine Tutorial - Step 9 Write-up](reverse-engineering/untitled-19.md)
 * [Game hacking - Cheat Engine  - Chapter 2 - Write-up - 25/07/2020](reverse-engineering/untitled-17.md)
+
+## Miscellaneous
+
+* [Spark Streaming - Log Monitor - 11/07/2020](miscellaneous/untitled.md)
+* [Support Vector Machine, SVM - Iris - 12/07/2020](miscellaneous/support-vector-machine-svm-iris-12-07-2020.md)
 
 ## coding-challenge
 
@@ -18,10 +23,6 @@
 * [Average Pair - 08/08/2020](coding-challenge/untitled.md)
 * [Are there any Duplication? - 07/08/2020](coding-challenge/are-there-any-duplication-07-08-2020.md)
 * [Same Frequency - Frequency Counter - 06/08/2020](coding-challenge/same-frequency-frequency-counter-06-08-2020.md)
-
-## spark-streaming
-
-* [Spark Streaming - Log Monitor - 11/07/2020](spark-streaming/untitled.md)
 
 ## Elastic Search
 

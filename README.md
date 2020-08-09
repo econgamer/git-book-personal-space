@@ -1,25 +1,12 @@
-# Initial page
+---
+description: '- a blog about tech'
+---
 
-## Getting Super Powers
+# My Blog
 
-Becoming a super hero is a fairly straight forward process:
+## 
 
-```
-$ give me super-powers
-```
-
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
-
-Once you're strong enough, save the world:
-
-{% code title="hello.sh" %}
-```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-{% endcode %}
+![](https://lh4.googleusercontent.com/qumvYrOZFa55p23sgh_2Yc2NviNKEooTweZB7Q2G0JgDBZRoyS4bLIKOUfqnK-CoiDviLFynk4TTP3PgDAX9cOwe9bjw0SCUB5gl9DBRygBBuvUsbpARs3GTCzTj36nB1mN7Rjee)
 
 
 
