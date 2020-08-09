@@ -55,4 +55,5 @@
 * [HBase - Non-Relational DataBase - Importing data - 15/07/2020](untitled-18.md)
 * [Zookeeper - keep your zoo tidy - 16/07/2020](untitled-19.md)
 * [Oozie - automate/schedule the working flow of Hadoop \(de\) - 17/07/2020](untitled-20.md)
+* [kafka - like ncat in a distribution system - simple connection - 18/07/2020](untitled-21.md)
 
