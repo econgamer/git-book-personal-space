@@ -2,7 +2,7 @@
 description: 09/08/2020
 ---
 
-# My Friend is in Crisis - Excel Issue
+# My Friend is in Crisis - Excel Issue - 09/08/2020
 
 ## How to delete unnecessary rows in a large data set in excel? 
 
