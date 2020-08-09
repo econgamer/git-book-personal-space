@@ -2,6 +2,10 @@
 
 * [Initial page](README.md)
 
+## Reverse-engineering
+
+* [Untitled](reverse-engineering/untitled.md)
+
 ## coding-challenge
 
 * [Min Sub Array Length - 08/08/2020](coding-challenge/untitled-4.md)
@@ -37,4 +41,7 @@
 * [Pagination - 02/08/2020](untitled-14.md)
 * [Sorting - 03/08/2020](untitled-15.md)
 * [Another filtering query - 04/08/2020](untitled-16.md)
+* [Game hacking - Cheat Engine  - Chapter 2 - Write-up - 25/07/2020](untitled-17.md)
+* [Game hacking - Cheat Engine Tutorial - Step 9 Write-up](untitled-19.md)
+* [Game hacking - Cheat Engine - CE Game tutorials -Step2 - Feedback - 28/07/2020](untitled-18.md)
 
