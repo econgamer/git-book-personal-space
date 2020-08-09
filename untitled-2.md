@@ -2,7 +2,7 @@
 description: 21/7/2020
 ---
 
-# ElasticSearch  - Add mapping + POST & GET A Single Entry - 21/07/2020
+# Add mapping + POST & GET A Single Entry - 21/07/2020
 
 ## Ports setting
 

@@ -2,7 +2,7 @@
 description: 26/07/2020
 ---
 
-# ElasticSearch - Parents and Children - 26/07/2020
+# Parents and Children - 26/07/2020
 
 ## put the series mapping to ElasticSearch
 

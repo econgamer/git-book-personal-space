@@ -2,7 +2,7 @@
 description: 27/07/2020
 ---
 
-# ElasticSearch - Flattened Datatype - 27/07/2020
+# Flattened Datatype - 27/07/2020
 
 ## To deal with the issue on Mapping Explosions \(ElasticSearch is using dynamic mapping to individual fields\), it offers Flattened Datatype.
 

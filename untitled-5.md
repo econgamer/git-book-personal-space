@@ -2,7 +2,7 @@
 description: 24/7/2020
 ---
 
-# ElasticSearch - Race Condition - 24/07/2020
+# Race Condition - 24/07/2020
 
 ## ElasticSearch is using primary\_term and seq\_no as an indicator for concurrency update
 

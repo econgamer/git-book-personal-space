@@ -2,7 +2,7 @@
 description: 23/7/2020
 ---
 
-# ElasticSearch - Delete - 23/07/2020
+# Delete - 23/07/2020
 
 Query the target that will be deleted later
 

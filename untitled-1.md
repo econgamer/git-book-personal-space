@@ -2,7 +2,7 @@
 description: 22/7/2020
 ---
 
-# ElasticSearch - Versioning - 22/07/2020
+# Versioning - 22/07/2020
 
 Get the entry by GET
 

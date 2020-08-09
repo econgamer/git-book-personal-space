@@ -2,7 +2,7 @@
 description: 25/7/2020
 ---
 
-# ElasticSearch - Analyzers and Tokenizers - 25/07/2020
+# Analyzers and Tokenizers - 25/07/2020
 
 Execute the below query
 

@@ -2,7 +2,7 @@
 description: 22/7/2020
 ---
 
-# ElasticSearch - Bulk API - 22/07/2020
+# Bulk API - 22/07/2020
 
 ## Get the target content, for example, movie data
 

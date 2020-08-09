@@ -2,7 +2,7 @@
 description: 20/7/2020
 ---
 
-# ElasticSearch - Environment setup - 20/07/2020
+# Environment setup - 20/07/2020
 
 ## Download and Install Ubuntu Server
 
