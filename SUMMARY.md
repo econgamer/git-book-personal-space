@@ -4,7 +4,10 @@
 
 ## Reverse-engineering
 
-* [Untitled](reverse-engineering/untitled.md)
+* [Game hacking - Cheat Engine - CE Game tutorials - Step3 - Write-up - 28/07/2020](reverse-engineering/untitled-20.md)
+* [Game hacking - Cheat Engine - CE Game tutorials -Step2 - Feedback - 28/07/2020](reverse-engineering/untitled-18.md)
+* [Game hacking - Cheat Engine Tutorial - Step 9 Write-up](reverse-engineering/untitled-19.md)
+* [Game hacking - Cheat Engine  - Chapter 2 - Write-up - 25/07/2020](reverse-engineering/untitled-17.md)
 
 ## coding-challenge
 
@@ -41,8 +44,13 @@
 * [Pagination - 02/08/2020](untitled-14.md)
 * [Sorting - 03/08/2020](untitled-15.md)
 * [Another filtering query - 04/08/2020](untitled-16.md)
-* [Game hacking - Cheat Engine  - Chapter 2 - Write-up - 25/07/2020](untitled-17.md)
-* [Game hacking - Cheat Engine Tutorial - Step 9 Write-up](untitled-19.md)
-* [Game hacking - Cheat Engine - CE Game tutorials -Step2 - Feedback - 28/07/2020](untitled-18.md)
-* [Game hacking - Cheat Engine - CE Game tutorials - Step3 - Write-up - 28/07/2020](untitled-20.md)
+
+## Hadoop
+
+* [The Best selling video games - Hadoop \#MapReduce - 12/07/2020](hadoop/the-best-selling-video-games-hadoop-mapreduce-12-07-2020.md)
+
+---
+
+* [Hive - Relational database - Importing data + read all - 14/07/2020](untitled-17.md)
+* [HBase - Non-Relational DataBase - Importing data - 15/07/2020](untitled-18.md)
 

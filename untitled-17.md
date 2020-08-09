@@ -1,46 +1,54 @@
 ---
-description: 25/7/2020
+description: 14/07/2020
 ---
 
-# Game hacking - Cheat Engine  - Chapter 2 - Write-up - 25/07/2020
+# Hive - Relational database - Importing data + read all - 14/07/2020
 
-The ball is hidden in the other half of the screen and you have to make the ball appear. Simple enough!? Let's go.
+## Create a table on Ambari using Hive
 
-![](.gitbook/assets/program.png)
+It is a simple process using SQL-like syntax:
 
-Search for &gt; All Modules &gt; String references: Search "Ball hidden..". Finding out the string located at 00711252, we go to the target address and look for any if statement
+```sql
+CREATE TABLE gamesalesss(
+  name STRING,
+  platform STRING,
+  year_of_Release STRING,
+  genre STRING,
+  publisher STRING,
+  nA_sales STRING,
+  eU_sales STRING,
+  jP_Sales STRING,
+  other_Sales STRING,
+  global_Sales STRING,
+  critic_Score STRING, 
+  critic_Count STRING,
+  user_Score STRING,
+  user_Count STRING,
+  developer STRING,
+  rating STRING)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '\t'
+STORED AS TEXTFILE;
 
-![](.gitbook/assets/1.png)
 
-Condition statement is found. \(Changing the view to graphic mode to have a better look on the code\)
 
-![](.gitbook/assets/2.png)
+LOAD DATA LOCAL INPATH '/tmp/Video_Games_Sales_as_at_22_Dec_2016_adjusted.tsv'
+OVERWRITE INTO TABLE gamesalesss;
+```
 
-![Graphic View](.gitbook/assets/3.png)
+{% hint style="info" %}
+Please, give write + read access to everyone to folder /tmp, otherwise Hive will alert that the system cannot find the file
+{% endhint %}
 
-\[80D5BC\] is the variable controlling the hidden statement. Deep drive into it, we found out that \[80D5BC\] is a variable with 0X27A as its maximum and A as its minimum. With an increment value keep on adding\(+1/-1\) to \[80D5BC\], we suspect this is the ball X coordinate variable.
+Once you're done, check the result
 
-![](.gitbook/assets/4.png)
+```sql
+SELECT * FROM gamesalesss LIMIT 100;
+```
 
-![](.gitbook/assets/5.png)
+```sql
+SELECT name, global_sales FROM gamesalesss ORDER BY global_sales DESC LIMIT 10;
+```
 
-![](.gitbook/assets/6.png)
-
-![](.gitbook/assets/7.png)
-
-![](.gitbook/assets/8.png)
-
-![](.gitbook/assets/9.png)
-
-Now, the picture is quite clear. \[80d5c4\] = incremental in x, \[80d5BC\] = x coordinate, \[80D5C8\] = incremental in y, \[80D5CO\] = y coordinate.
-
-![](.gitbook/assets/10-1-.png)
-
-![](.gitbook/assets/11.png)
-
-> Change the compare value to 0XFFFFFFFF, in that case, hidden ball call will never be triggered.
-
-![](.gitbook/assets/12.png)
-
-![](.gitbook/assets/result%20%281%29.png)
+![](.gitbook/assets/hive.png)
 
