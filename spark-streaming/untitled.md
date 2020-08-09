@@ -2,7 +2,7 @@
 description: Real Time Log Monitor - 11/07/2020
 ---
 
-# index
+# Spark Streaming - Log Monitor
 
 ## Log Monitor Write-up
 
