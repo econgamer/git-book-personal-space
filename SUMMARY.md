@@ -11,6 +11,7 @@
 
 ## Miscellaneous
 
+* [My Friend is in Crisis - Excel Issue](miscellaneous/my-friend-is-in-crisis-excel-issue.md)
 * [Spark Streaming - Log Monitor - 11/07/2020](miscellaneous/untitled.md)
 * [Support Vector Machine, SVM - Iris - 12/07/2020](miscellaneous/support-vector-machine-svm-iris-12-07-2020.md)
 
