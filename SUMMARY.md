@@ -44,4 +44,5 @@
 * [Game hacking - Cheat Engine  - Chapter 2 - Write-up - 25/07/2020](untitled-17.md)
 * [Game hacking - Cheat Engine Tutorial - Step 9 Write-up](untitled-19.md)
 * [Game hacking - Cheat Engine - CE Game tutorials -Step2 - Feedback - 28/07/2020](untitled-18.md)
+* [Game hacking - Cheat Engine - CE Game tutorials - Step3 - Write-up - 28/07/2020](untitled-20.md)
 
