@@ -2,7 +2,7 @@
 description: 2020/08/08
 ---
 
-# Average Pair
+# Average Pair - 08/08/2020
 
 ## Question
 
