@@ -43,6 +43,8 @@ ncat -kl 2345 < access_log.txt
 Please be aware to use uncommonly used port, e.g. 1234, 2345, 9999
 {% endhint %}
 
+![](../.gitbook/assets/log-1-.png)
+
 ### The logs we are accessing are Apache access logs
 
 > 127.0.0.1 - frank \[10/Oct/2000:13:55:36 -0700\] "GET /apache\_pb.gif HTTP/1.0" 200 2326 "[http://www.example.com/start.html](http://www.example.com/start.html)" "Mozilla/4.08 \[en\] \(Win98; I ;Nav\)"
@@ -95,4 +97,8 @@ All the data received from a receiver gets written into a write-ahead log in the
 {% endhint %}
 
 ### Result
+
+![](../.gitbook/assets/result.png)
+
+### 
 
