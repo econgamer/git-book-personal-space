@@ -1,6 +1,6 @@
 # Table of contents
 
-* [My Blog](README.md)
+* [My Bl0g](README.md)
 
 ## Reverse-engineering
 
