@@ -17,6 +17,7 @@
 
 ## coding-challenge
 
+* [It's all about recursion - math operations](coding-challenge/its-all-about-recursion-math-operations.md)
 * [Min Sub Array Length - 08/08/2020](coding-challenge/untitled-4.md)
 * [Max Sub Array Sum - 08/08/2020](coding-challenge/untitled-3.md)
 * [Is Subsequence - 08/08/2020](coding-challenge/untitled-2.md)
