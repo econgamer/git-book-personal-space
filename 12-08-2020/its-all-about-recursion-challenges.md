@@ -2,7 +2,7 @@
 description: 12/8/2020
 ---
 
-# It's all about recursion - challenges
+# It's all about recursion - challenges, reverse, is Palindrome? , callback function, flatten
 
 ## Challenge 1
 

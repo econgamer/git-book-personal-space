@@ -4,7 +4,7 @@
 
 ## 12/08/2020
 
-* [It's all about recursion - challenges](12-08-2020/its-all-about-recursion-challenges.md)
+* [It's all about recursion - challenges, reverse, is Palindrome? , callback function, flatten](12-08-2020/its-all-about-recursion-challenges.md)
 
 ## Reverse-engineering
 
