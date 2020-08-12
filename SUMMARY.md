@@ -2,6 +2,10 @@
 
 * [My Bl0g](README.md)
 
+## 12/08/2020
+
+* [It's all about recursion - challenges](12-08-2020/its-all-about-recursion-challenges.md)
+
 ## Reverse-engineering
 
 * [Game hacking - Cheat Engine - CE Game tutorials - Step3 - Write-up - 28/07/2020](reverse-engineering/untitled-20.md)
