@@ -2,9 +2,9 @@
 description: 12/8/2020
 ---
 
-# It's all about recursion - challenges, reverse, is Palindrome? , callback function, flatten
+# It's all about recursion - challenges - part1 \(4 challenges\)
 
-## Challenge 1
+## Reverse the strings
 
 ```javascript
 // reverse('awesome') // 'emosewa'
@@ -23,7 +23,7 @@ reverse('rithmschool');
 
 ```
 
-## Challenge 2
+## Is the string Palindrome?
 
 ```javascript
 // isPalindrome('awesome') // false
@@ -52,7 +52,7 @@ console.log("result1: " + isPalindrome('amanaplanacanalpanama')); // true
 console.log("result1: " + isPalindrome('amanaplanacanalpandemonium')); // false
 ```
 
-## Challenge 3
+## Recursive - Callback function 
 
 ```javascript
 // SAMPLE INPUT / OUTPUT
@@ -86,7 +86,7 @@ console.log("result 3: " + someRecursive([4,6,8], isOdd));
 console.log("result 4: " + someRecursive([4,6,8], val => val < 10));
 ```
 
-## Challenge 4
+## Flatten the lists
 
 ```javascript
 // flatten([1, [2, [3, 4], [[5]]]]) // [1, 2, 3, 4, 5]
