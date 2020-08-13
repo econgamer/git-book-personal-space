@@ -4,7 +4,7 @@
 
 ## 13/08/2020
 
-* [Sorting - bubbleSort,](13-08-2020/sorting-bubblesort.md)
+* [Sorting - Bubble Sort, Selection Sort, Insertion Sort](13-08-2020/sorting-bubblesort.md)
 
 ## 12/08/2020
 

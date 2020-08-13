@@ -2,7 +2,7 @@
 description: 13/08/2020
 ---
 
-# Sorting - bubbleSort,
+# Sorting - Bubble Sort, Selection Sort, Insertion Sort
 
 ## Bubble Sort
 
@@ -43,8 +43,6 @@ bubbleSort([5,3,4,1,2,14,-1]);
 ```
 
 ## Selection Sort
-
-
 
 ```javascript
 function selectionSort(arr){
