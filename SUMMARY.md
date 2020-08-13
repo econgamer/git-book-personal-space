@@ -2,6 +2,10 @@
 
 * [My Bl0g](README.md)
 
+## 13/08/2020
+
+* [Sorting - bubbleSort,](13-08-2020/sorting-bubblesort.md)
+
 ## 12/08/2020
 
 * [It's all about recursion - challenges - part1 \(4 challenges\)](12-08-2020/its-all-about-recursion-challenges.md)
