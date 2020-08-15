@@ -6,6 +6,8 @@ description: 15/08/2020
 
 ## Quick Sort
 
+![source: https://www.techiedelight.com/quicksort/](../.gitbook/assets/quicksort.png)
+
 ```javascript
 function quickSort(arr, left = 0, right = arr.length - 1){
     
