@@ -6,6 +6,8 @@ description: 14/08/2020
 
 ## Merging Sort
 
+![Source: https://en.wikipedia.org/wiki/Merge\_sort ](../.gitbook/assets/300px-merge_sort_algorithm_diagram.svg.png)
+
 ```javascript
 function mergeSort(arr){
 
