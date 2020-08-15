@@ -8,6 +8,8 @@ description: 15/08/2020
 
 ![source: https://www.techiedelight.com/quicksort/](../.gitbook/assets/quicksort.png)
 
+### Unlike the image, Pivot point is set to index\[0\] for every loop
+
 ```javascript
 function quickSort(arr, left = 0, right = arr.length - 1){
     
