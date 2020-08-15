@@ -2,6 +2,10 @@
 
 * [Daily Logs](README.md)
 
+## 15/08/2020
+
+* [Sorting - Quick Sort - it's hard](15-08-2020/sorting-quick-sort-its-hard.md)
+
 ## 14/08/2020
 
 * [Sorting - Merging Sort - O\(nlogn\)](14-08-2020/sorting-merging-sort-o-nlogn.md)
