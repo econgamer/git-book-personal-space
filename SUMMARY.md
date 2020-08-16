@@ -2,6 +2,10 @@
 
 * [Daily Logs](README.md)
 
+## 16/08/2020
+
+* [Radix Sort - more straightforward](16-08-2020/radix-sort-more-straightforward.md)
+
 ## 15/08/2020
 
 * [Sorting - Quick Sort - it's hard](15-08-2020/sorting-quick-sort-its-hard.md)
