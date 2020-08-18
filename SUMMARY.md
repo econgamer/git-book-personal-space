@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Daily Logs](README.md)
+* [RabbitMQ Setup - "Docker way"](rabbitmq-setup-docker-way.md)
 
 ## 18/08/2020
 
