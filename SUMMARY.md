@@ -2,6 +2,11 @@
 
 * [Daily Logs](README.md)
 
+## 18/08/2020
+
+* [Maven Setup](18-08-2020/maven-setup.md)
+* [Netflix-system-design-in-simple-language-PART1-ZUUL](18-08-2020/netflix-system-design-in-simple-language-part1-zuul.md)
+
 ## 16/08/2020
 
 * [Radix Sort - more straightforward](16-08-2020/radix-sort-more-straightforward.md)
