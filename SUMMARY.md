@@ -6,6 +6,7 @@
 
 * [Environment: Maven Setup](18-08-2020/maven-setup.md)
 * [Netflix-system-design-in-simple-language-PART1-ZUUL](18-08-2020/netflix-system-design-in-simple-language-part1-zuul.md)
+* [My Docker images location](18-08-2020/my-docker-images-location.md)
 
 ## 16/08/2020
 
