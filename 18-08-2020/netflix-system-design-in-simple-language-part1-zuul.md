@@ -33,6 +33,7 @@ Gateway\(ZUUL\): [https://github.com/econgamer/netflix-system-design-in-simple-l
 ```bash
 mvn clean install
 mvn clean test
+mvn spring-boot:run
 ```
 
 ![](../.gitbook/assets/result%20%282%29.png)
