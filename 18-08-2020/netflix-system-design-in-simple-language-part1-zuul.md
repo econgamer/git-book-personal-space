@@ -16,24 +16,28 @@ Source: [https://dzone.com/articles/spring-cloud-netflix-zuul-edge-serverapi-gat
 
 Tutorial: [https://spring.io/guides/gs/routing-and-filtering/](https://spring.io/guides/gs/routing-and-filtering/)
 
+Source Code:
+
+Web Server: [https://github.com/econgamer/netflix-system-design-in-simple-language/tree/master/circuit-breaker-reading](https://github.com/econgamer/netflix-system-design-in-simple-language/tree/master/routing-and-filtering-book)
+
+Gateway\(ZUUL\): [https://github.com/econgamer/netflix-system-design-in-simple-language/tree/master/routing-and-filtering-gateway](https://github.com/econgamer/netflix-system-design-in-simple-language/tree/master/routing-and-filtering-gateway)
+
+
+
 ![Two applications needed, web server and Zuul](../.gitbook/assets/gateway.png)
 
-![](../.gitbook/assets/debug_version_error.png)
+![Remember to check your java.version if anything gone wrong](../.gitbook/assets/debug_version_error.png)
 
-![](../.gitbook/assets/add_variable.png)
+#### Build & Run the program:
+
+```bash
+mvn clean install
+mvn clean test
+```
 
 ![](../.gitbook/assets/result%20%282%29.png)
 
 
-
-Once you're strong enough, save the world:
-
-{% code title="hello.sh" %}
-```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-{% endcode %}
 
 
 
