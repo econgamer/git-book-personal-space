@@ -4,7 +4,7 @@ description: 18/07/2020
 
 # kafka - like ncat in a distribution system - simple connection - 18/07/2020
 
-## Getting Super Power
+## Kafka aims to provide a unified, high-throughput, low-latency platform for handling real-time data feeds. - From Google
 
 There are three roles that need to be setup
 
