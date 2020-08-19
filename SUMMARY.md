@@ -7,6 +7,7 @@
 * [RabbitMQ - Hello World - remarks](19-08-2020/rabbitmq-hello-world-remarks.md)
 * [Install nano on Windows](19-08-2020/install-nano-on-windows.md)
 * [RabbitMQ - Work Queues Remarks](19-08-2020/untitled.md)
+* [RabbitMQ - Publish/Subscribe](19-08-2020/rabbitmq-publish-subscribe.md)
 
 ## 18/08/2020
 
