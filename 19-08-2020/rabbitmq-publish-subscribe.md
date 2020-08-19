@@ -35,3 +35,5 @@ $ sudo rabbitmqctl list_exchanges
 $ rabbitmqctl list_bindings
 ```
 
+![Result](../.gitbook/assets/result%20%284%29.png)
+
