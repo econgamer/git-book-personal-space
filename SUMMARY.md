@@ -2,6 +2,11 @@
 
 * [Daily Logs](README.md)
 
+## 19/08/2020
+
+* [RabbitMQ - Hello World - remarks](19-08-2020/rabbitmq-hello-world-remarks.md)
+* [Untitled](19-08-2020/untitled.md)
+
 ## 18/08/2020
 
 * [Environment: Maven Setup](18-08-2020/maven-setup.md)
