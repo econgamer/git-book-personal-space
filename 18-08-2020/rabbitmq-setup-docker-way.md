@@ -22,7 +22,13 @@ $docker pull rabbitmq
 $docker run -d --hostname my-rabbit --name rabbit-server -p 5672:5672 rabbitmq
 ```
 
+ Use the command `docker exec -it <container name> /bin/bash` to get a bash shell in the container
+
 Easy Peasy 😚 
+
+Start the container after created:
+
+![](../.gitbook/assets/docker-resume.png)
 
 {% hint style="info" %}
 For Environment set up: [https://stackoverflow.com/questions/41089268/rabbitmq-connection-refused-from-docker-container-to-local-host](https://stackoverflow.com/questions/41089268/rabbitmq-connection-refused-from-docker-container-to-local-host)
