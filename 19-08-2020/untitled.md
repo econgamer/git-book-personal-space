@@ -23,7 +23,7 @@ Delivering working tasks to workers based on their workload. Maximum job task fo
 channel.basic_qos(prefetch_count=1)
 ```
 
-basic\_ack is set in order to make sure the message delivered to worker is deleted when worker finished the task. Worker will send back the message to tell Server that the work is done and the server can delete the message freely. 
+basic\_ack is set in order to make sure the message delivered to worker is deleted when worker finished the task. **Even if the worker is close during the process, the processing message will be delivered to others**. Worker will send back the message to tell Server that the work is done and the server can delete the message freely. 
 
 ```python
 def callback(ch, method, properties, body):
@@ -40,4 +40,6 @@ Checking with unack messages by:
 ```python
 $ rabbitmqctl.bat list_queues name messages_ready messages_unacknowledged
 ```
+
+![result](../.gitbook/assets/result%20%283%29.png)
 
