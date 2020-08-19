@@ -23,5 +23,15 @@ Delivering working tasks to workers based on their workload. Maximum job task fo
 channel.basic_qos(prefetch_count=1)
 ```
 
+basic\_ack is important in order to make sure the message delivered to worker is deleted when worker finished the task. Worker will send back the message to tell Server that the work is done and you can delete the message freely. 
 
+```python
+def callback(ch, method, properties, body):
+    print(" [x] Received %r" % body)
+    time.sleep( body.count('.') )
+    print(" [x] Done")
+    ch.basic_ack(delivery_tag = method.delivery_tag)
+
+channel.basic_consume(queue='hello', on_message_callback=callback)
+```
 
