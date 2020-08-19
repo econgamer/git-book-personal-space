@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Daily Logs](README.md)
-* [Ehcache](ehcache.md)
 
 ## 19/08/2020
 
@@ -9,6 +8,7 @@
 * [Install nano on Windows](19-08-2020/install-nano-on-windows.md)
 * [RabbitMQ - Work Queues Remarks](19-08-2020/untitled.md)
 * [RabbitMQ - Publish/Subscribe](19-08-2020/rabbitmq-publish-subscribe.md)
+* [Ehcache](19-08-2020/ehcache.md)
 
 ## 18/08/2020
 
