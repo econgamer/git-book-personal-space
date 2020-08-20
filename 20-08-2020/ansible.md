@@ -1,25 +1,61 @@
-# Ansible -
+# Ansible feat. Nginx - Get the server status with Ansible
 
 #### Materials: [https://docs.ansible.com/ansible/2.5/modules/modules\_by\_category.html](https://docs.ansible.com/ansible/2.5/modules/modules_by_category.html)
 
-Becoming a super hero is a fairly straight forward process:
+ngx: [http://nginx.org/en/docs/http/ngx\_http\_stub\_status\_module.html](http://nginx.org/en/docs/http/ngx_http_stub_status_module.html)
+
+Setting up ngx\_http\_stub\_status\_module:
 
 ```
-$ give me super-powers
+server{
+
+    location = /basic_status{
+         stub_status;   
+    }
+
+}
 ```
 
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
 
-Once you're strong enough, save the world:
 
-{% code title="hello.sh" %}
-```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
+```text
+# Gather status facts from nginx on localhost
+- name: get current http stats
+  nginx_status_facts:
+    url: http://localhost/nginx_status
+
+# Gather status facts from nginx on localhost with a custom timeout of 20 seconds
+- name: get current http stats
+  nginx_status_facts:
+    url: http://localhost/nginx_status
+    timeout: 20
 ```
-{% endcode %}
 
+### Run it
 
+```text
+ansible-playbook -i hosts playbook.yml
+```
+
+### Cheat Sheet
+
+File Structure:
+
+```text
+.
+├── hosts
+├── playbook.yml
+└── roles
+    └── my-role
+        ├── files
+        │   └── test.txt
+        └── tasks
+            └── main.yml
+```
+
+```text
+ansible-playbook -i hosts playbook.yml
+```
+
+Reference: [https://stackoverflow.com/questions/26732241/ansible-save-registered-variable-to-file](https://stackoverflow.com/questions/26732241/ansible-save-registered-variable-to-file)
 
