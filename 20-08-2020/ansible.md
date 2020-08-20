@@ -43,7 +43,7 @@ ansible-playbook -i hosts playbook.yml
 
 ### Result
 
-![](../.gitbook/assets/image%20%285%29.png)
+![Return value parameters: https://docs.ansible.com/ansible/latest/modules/nginx\_status\_info\_module.html\#examples](../.gitbook/assets/image%20%285%29.png)
 
 ### Cheat Sheet
 
