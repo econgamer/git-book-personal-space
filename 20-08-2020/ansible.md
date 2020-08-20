@@ -1,3 +1,7 @@
+---
+description: 20/08/2020
+---
+
 # Ansible feat. Nginx - Get the server status with Ansible
 
 #### Materials: [https://docs.ansible.com/ansible/2.5/modules/modules\_by\_category.html](https://docs.ansible.com/ansible/2.5/modules/modules_by_category.html)
@@ -36,6 +40,10 @@ server{
 ```text
 ansible-playbook -i hosts playbook.yml
 ```
+
+### Result
+
+![](../.gitbook/assets/image%20%285%29.png)
 
 ### Cheat Sheet
 
