@@ -14,7 +14,7 @@ sudo apt update
 sudo apt install nginx
 ```
 
-![](../.gitbook/assets/image%20%283%29.png)
+![](../.gitbook/assets/image%20%285%29.png)
 
 #### My nginx config file is located at: `/etc/nginx`
 
@@ -40,11 +40,11 @@ Comment out all the http block and replace them by the followings:
 http{
     server{
         location /{
-            root /home/kali/Desktop/nginx-workshop;
+            root /home/kali/Desktop/nginx-workshop/www;
         }
         
         location /images/{
-            root /home/kali/Desktop/nginx-workshop/images;
+            root /home/kali/Desktop/nginx-workshop;
         }
     }
 }
@@ -54,6 +54,31 @@ Reload the server
 
 ```bash
 sudo nginx -s reload
+```
+
+![](../.gitbook/assets/image%20%284%29.png)
+
+### Setting up proxy server:
+
+```bash
+server{
+    location / {
+        proxy_pass http://localhost:8080;
+    }
+    
+    location ~ \.(gif|jpg|jpeg|png)$ {
+        root /home/kali/Desktop/nginx-workshop/images;
+    }
+}
+
+server{
+    listen 8080;
+    root /home/kali/Desktop/nginx-workshop/proxy;
+    
+    location /{
+    }
+
+}
 ```
 
 ![](../.gitbook/assets/image%20%282%29.png)
