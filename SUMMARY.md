@@ -1,8 +1,11 @@
 # Table of contents
 
 * [Daily Logs](README.md)
-* [Nginx Setup](nginx-setup.md)
-* [Ansible -](ansible.md)
+
+## 20/08/2020
+
+* [Nginx - Beginner Guide](20-08-2020/nginx-setup.md)
+* [Ansible -](20-08-2020/ansible.md)
 
 ## 19/08/2020
 

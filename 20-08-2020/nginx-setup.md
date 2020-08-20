@@ -2,7 +2,7 @@
 description: 20/08/2020
 ---
 
-# Nginx Setup
+# Nginx - Beginner Guide
 
 ## Installation:
 
@@ -14,7 +14,7 @@ sudo apt update
 sudo apt install nginx
 ```
 
-![](.gitbook/assets/image%20%283%29.png)
+![](../.gitbook/assets/image%20%283%29.png)
 
 #### My nginx config file is located at: `/etc/nginx`
 
@@ -56,7 +56,7 @@ Reload the server
 sudo nginx -s reload
 ```
 
-![](.gitbook/assets/image%20%282%29.png)
+![](../.gitbook/assets/image%20%282%29.png)
 
 ### Cheat Sheet
 
@@ -71,4 +71,6 @@ ps -ax | grep nginx
 ```bash
 sudo nginx -s quit
 ```
+
+### Tutorial: [http://nginx.org/en/docs/beginners\_guide.html](http://nginx.org/en/docs/beginners_guide.html)
 
