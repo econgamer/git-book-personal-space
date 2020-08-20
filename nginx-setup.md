@@ -10,7 +10,7 @@ sudo apt update
 sudo apt install nginx
 ```
 
-![](.gitbook/assets/image%20%282%29.png)
+![](.gitbook/assets/image%20%283%29.png)
 
 #### My nginx config file is located at: `/etc/nginx`
 
@@ -24,14 +24,47 @@ $ sudo nginx
  Super-powers are granted randomly so please submit an issue if you're not happy with yours.
 {% endhint %}
 
-Once you're strong enough, save the world:
+Once you're done, edit the /etc/nginx/nginx.conf
 
-{% code title="hello.sh" %}
 ```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
+$ sudo nano nginx
 ```
-{% endcode %}
 
+Comment out all the http block and replace them by the followings: 
 
+```bash
+http{
+    server{
+        location /{
+            root /home/kali/Desktop/nginx-workshop;
+        }
+        
+        location /images/{
+            root /home/kali/Desktop/nginx-workshop/images;
+        }
+    }
+}
+```
+
+Reload the server
+
+```bash
+sudo nginx -s reload
+```
+
+![](.gitbook/assets/image%20%282%29.png)
+
+### Cheat Sheet
+
+```bash
+sudo netstat -tulpn
+```
+
+```bash
+ps -ax | grep nginx
+```
+
+```bash
+sudo nginx -s quit
+```
 
