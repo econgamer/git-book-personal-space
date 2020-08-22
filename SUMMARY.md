@@ -2,6 +2,10 @@
 
 * [Daily Logs](README.md)
 
+## 22/08/2020
+
+* [Max Binary Heap](22-08-2020/max-binary-heap.md)
+
 ## 20/08/2020
 
 * [Nginx - Beginner Guide](20-08-2020/nginx-setup.md)
