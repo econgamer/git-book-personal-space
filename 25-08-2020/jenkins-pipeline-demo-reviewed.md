@@ -64,7 +64,11 @@ Specify custom workspace for seperated jobs
 
 No source code needed for job2 & 3
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/image%20%2810%29.png)
+
+Result: localhost:8180/sample.txt
+
+![](../.gitbook/assets/image%20%2811%29.png)
 
 #### Cheat Sheet
 
