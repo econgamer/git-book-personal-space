@@ -2,6 +2,10 @@
 
 * [Daily Logs](README.md)
 
+## 25/08/2020
+
+* [Jenkins - Pipeline demo reviewed](25-08-2020/jenkins-pipeline-demo-reviewed.md)
+
 ## 22/08/2020
 
 * [Max Binary Heap](22-08-2020/max-binary-heap.md)
