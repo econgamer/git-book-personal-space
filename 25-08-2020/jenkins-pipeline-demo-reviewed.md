@@ -58,7 +58,7 @@ USER jenkins
 
 Remarks:
 
-Specify custom workspace for seperate jobs.
+Specify custom workspace for seperated jobs
 
 ![](../.gitbook/assets/image%20%289%29.png)
 
