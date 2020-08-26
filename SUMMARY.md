@@ -2,6 +2,10 @@
 
 * [Daily Logs](README.md)
 
+## 26/08/2020
+
+* [Grafana Basic Features Setup](26-08-2020/grafana-basic-features-setup.md)
+
 ## 25/08/2020
 
 * [Jenkins - Pipeline demo reviewed](25-08-2020/jenkins-pipeline-demo-reviewed.md)
