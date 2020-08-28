@@ -4,7 +4,7 @@ description: 22/08/2020
 
 # Max Binary Heap
 
-## Getting Super Powers
+
 
 
 
