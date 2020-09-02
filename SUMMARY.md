@@ -2,6 +2,10 @@
 
 * [Daily Logs](README.md)
 
+## 02/09/2020
+
+* [Hash Function](02-09-2020/hash-function.md)
+
 ## 28/08/2020
 
 * [Graph - undirected edges](28-08-2020/graph-undirected-edges.md)
