@@ -2,6 +2,10 @@
 
 * [Daily Logs](README.md)
 
+## 04/09/2020
+
+* [Singly Linked Lists](04-09-2020/singly-linked-lists.md)
+
 ## 02/09/2020
 
 * [Hash Function](02-09-2020/hash-function.md)
